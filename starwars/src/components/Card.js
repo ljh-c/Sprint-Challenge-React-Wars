@@ -3,11 +3,11 @@ import { Card, CardText, CardBody,CardTitle, CardSubtitle } from 'reactstrap';
 
 const CharCard = ({ name, year, films }) => {
   return (
-    <Card maxWidth='325px'>
+    <Card>
       <CardBody>
-        <CardTitle>{name}</CardTitle>
+        <CardTitle><h2>{name}</h2></CardTitle>
         <CardSubtitle>Born: {year}</CardSubtitle>
-        <CardText>Number of Films: {films}</CardText>
+        <CardText>Number of Films: <b>{films}</b></CardText>
       </CardBody>
     </Card>
   );
